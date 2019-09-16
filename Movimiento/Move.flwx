@@ -277,7 +277,62 @@
                 </CHILD>
             </CHILD>
         </SUBPROGRAM>
-        <SUBPROGRAM ID="7" TYPE="1" Y="4373" NAME="DG" X="6889"/>
+        <SUBPROGRAM ID="7" TYPE="1" Y="4373" NAME="DG" X="6889">
+            <BLOCK ID="5"/>
+            <POS Y="4459" X="6889"/>
+            <VAL>
+                <LOOPTIMES ID="0"/>
+                <FOREVERLOOP ID="true"/>
+            </VAL>
+            <CHILD ID="STEPNEXT">
+                <BLOCK ID="1"/>
+                <POS Y="4556" X="6889"/>
+                <VAL>
+                    <CONDITION ID="DG == 1"/>
+                </VAL>
+                <CHILD ID="LEFT">
+                    <BLOCK ID="7"/>
+                    <POS Y="4621" X="6776"/>
+                    <VAL/>
+                </CHILD>
+                <CHILD ID="NEXT">
+                    <BLOCK ID="1"/>
+                    <POS Y="4740" X="6889"/>
+                    <VAL>
+                        <CONDITION ID="DG == 2"/>
+                    </VAL>
+                    <CHILD ID="LEFT">
+                        <BLOCK ID="7"/>
+                        <POS Y="4805" X="6776"/>
+                        <VAL/>
+                    </CHILD>
+                    <CHILD ID="NEXT">
+                        <BLOCK ID="1"/>
+                        <POS Y="4923" X="6889"/>
+                        <VAL>
+                            <CONDITION ID="DG == 3"/>
+                        </VAL>
+                        <CHILD ID="LEFT">
+                            <BLOCK ID="7"/>
+                            <POS Y="4988" X="6776"/>
+                            <VAL/>
+                        </CHILD>
+                        <CHILD ID="NEXT">
+                            <BLOCK ID="1"/>
+                            <POS Y="5107" X="6889"/>
+                            <VAL>
+                                <CONDITION ID="DG == 4"/>
+                            </VAL>
+                            <CHILD ID="LEFT">
+                                <BLOCK ID="7"/>
+                                <POS Y="5172" X="6776"/>
+                                <VAL/>
+                            </CHILD>
+                        </CHILD>
+                    </CHILD>
+                </CHILD>
+            </CHILD>
+        </SUBPROGRAM>
     </Catalog>
     <Catalog GLOBALMTN="VJC6.0"/>
     <Catalog GLOABLETIP="VJC6.0">
@@ -301,5 +356,5 @@
         <Catalog Var="VJC6.0"/>
         <Catalog BaseBlock="VJC6.0"/>
     </Catalog>
-    <Catalog SIZE="10"/>
+    <Catalog SIZE="162"/>
 </VJCC>
