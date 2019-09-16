@@ -8,9 +8,10 @@
         <VAR ID="800" INDEX="1" NAME="VP"/>
         <VAR ID="800" INDEX="2" NAME="VN"/>
         <VAR ID="800" INDEX="3" NAME="Sens"/>
+        <VAR ID="800" INDEX="4" NAME="DG"/>
     </Catalog>
     <Catalog GLOBALTREE="VJC6.0">
-        <Catalog SUBCOUNT="6" SCENEWIDTH="14400" ROTX="6889" SCENEHEIGHT="9000" MAIN="VJC6.0">
+        <Catalog SUBCOUNT="7" SCENEWIDTH="14400" ROTX="6889" SCENEHEIGHT="9000" MAIN="VJC6.0">
             <BLOCK ID="36"/>
             <POS Y="4459" X="6889"/>
             <VAL>
@@ -33,151 +34,169 @@
                     <POS Y="4632" X="6889"/>
                     <VAL>
                         <LEFTVALUE ID="Sens"/>
-                        <RIGHTVARONE ID="2500"/>
+                        <RIGHTVARONE ID="2900"/>
                         <RIGHTOPERATOR ID="4"/>
                         <RIGHTTWO ID=""/>
                     </VAL>
                     <CHILD ID="NEXT">
-                        <BLOCK ID="5"/>
+                        <BLOCK ID="36"/>
                         <POS Y="4719" X="6889"/>
                         <VAL>
-                            <LOOPTIMES ID="0"/>
-                            <FOREVERLOOP ID="true"/>
+                            <LEFTVALUE ID="DG"/>
+                            <RIGHTVARONE ID="1"/>
+                            <RIGHTOPERATOR ID="4"/>
+                            <RIGHTTWO ID=""/>
                         </VAL>
-                        <CHILD ID="STEPNEXT">
-                            <BLOCK ID="11"/>
-                            <POS Y="4816" X="6889"/>
+                        <CHILD ID="NEXT">
+                            <BLOCK ID="5"/>
+                            <POS Y="4806" X="6889"/>
                             <VAL>
-                                <NAME ID="Sen"/>
-                                <INDEX ID="6"/>
+                                <LOOPTIMES ID="0"/>
+                                <FOREVERLOOP ID="true"/>
                             </VAL>
-                            <CHILD ID="NEXT">
-                                <BLOCK ID="1"/>
+                            <CHILD ID="STEPNEXT">
+                                <BLOCK ID="11"/>
                                 <POS Y="4903" X="6889"/>
                                 <VAL>
-                                    <CONDITION ID="(gra_1 > Sens)&amp;&amp;(gra_2 > Sens)"/>
+                                    <NAME ID="Sen"/>
+                                    <INDEX ID="6"/>
                                 </VAL>
-                                <CHILD ID="LEFT">
-                                    <BLOCK ID="3"/>
-                                    <POS Y="4968" X="6756"/>
-                                    <VAL>
-                                        <CONDITION ID="gra_3 &lt; 0"/>
-                                    </VAL>
-                                    <CHILD ID="STEPNEXT">
-                                        <BLOCK ID="11"/>
-                                        <POS Y="5065" X="6756"/>
-                                        <VAL>
-                                            <NAME ID="MS"/>
-                                            <INDEX ID="3"/>
-                                        </VAL>
-                                        <CHILD ID="NEXT">
-                                            <BLOCK ID="17"/>
-                                            <POS Y="5151" X="6756"/>
-                                            <VAL>
-                                                <DISPLAYTYPE ID="0"/>
-                                                <DISPLAYINDEX ID="0"/>
-                                                <DISPLAYSTRING ID="interseccion;;;;;;;"/>
-                                                <DISPLAYCHECKS ID="1;1;1;1;1;1;1;1"/>
-                                                <DISPLAYMEDIAID ID="1"/>
-                                                <DISPLAYCUSTOMIMAGENAME ID=""/>
-                                            </VAL>
-                                        </CHILD>
-                                    </CHILD>
-                                </CHILD>
-                                <CHILD ID="RIGHT">
-                                    <BLOCK ID="3"/>
-                                    <POS Y="4968" X="7021"/>
-                                    <VAL>
-                                        <CONDITION ID="gra_4 &lt; 0"/>
-                                    </VAL>
-                                    <CHILD ID="STEPNEXT">
-                                        <BLOCK ID="11"/>
-                                        <POS Y="5065" X="7021"/>
-                                        <VAL>
-                                            <NAME ID="MS"/>
-                                            <INDEX ID="3"/>
-                                        </VAL>
-                                        <CHILD ID="NEXT">
-                                            <BLOCK ID="17"/>
-                                            <POS Y="5151" X="7021"/>
-                                            <VAL>
-                                                <DISPLAYTYPE ID="0"/>
-                                                <DISPLAYINDEX ID="0"/>
-                                                <DISPLAYSTRING ID="interseccion 2;;;;;;;"/>
-                                                <DISPLAYCHECKS ID="1;1;1;1;1;1;1;1"/>
-                                                <DISPLAYMEDIAID ID="1"/>
-                                                <DISPLAYCUSTOMIMAGENAME ID=""/>
-                                            </VAL>
-                                        </CHILD>
-                                    </CHILD>
-                                </CHILD>
                                 <CHILD ID="NEXT">
                                     <BLOCK ID="1"/>
-                                    <POS Y="5322" X="6889"/>
+                                    <POS Y="4989" X="6889"/>
                                     <VAL>
-                                        <CONDITION ID="gra_1 > Sens"/>
+                                        <CONDITION ID="(gra_1 > Sens)&amp;&amp;(gra_2 > Sens)"/>
                                     </VAL>
                                     <CHILD ID="LEFT">
                                         <BLOCK ID="3"/>
-                                        <POS Y="5387" X="6756"/>
+                                        <POS Y="5054" X="6756"/>
                                         <VAL>
-                                            <CONDITION ID="gra_3 &lt; 0"/>
+                                            <CONDITION ID="gra_3 > Sens"/>
                                         </VAL>
                                         <CHILD ID="STEPNEXT">
                                             <BLOCK ID="11"/>
-                                            <POS Y="5484" X="6756"/>
+                                            <POS Y="5151" X="6756"/>
                                             <VAL>
-                                                <NAME ID="MS"/>
-                                                <INDEX ID="3"/>
+                                                <NAME ID="Sen"/>
+                                                <INDEX ID="6"/>
                                             </VAL>
                                             <CHILD ID="NEXT">
-                                                <BLOCK ID="17"/>
-                                                <POS Y="5570" X="6756"/>
+                                                <BLOCK ID="11"/>
+                                                <POS Y="5238" X="6756"/>
                                                 <VAL>
-                                                    <DISPLAYTYPE ID="0"/>
-                                                    <DISPLAYINDEX ID="0"/>
-                                                    <DISPLAYSTRING ID="sigue curva 1;;;;;;;"/>
-                                                    <DISPLAYCHECKS ID="1;1;1;1;1;1;1;1"/>
-                                                    <DISPLAYMEDIAID ID="1"/>
-                                                    <DISPLAYCUSTOMIMAGENAME ID=""/>
+                                                    <NAME ID="DG"/>
+                                                    <INDEX ID="7"/>
                                                 </VAL>
                                             </CHILD>
                                         </CHILD>
                                     </CHILD>
                                     <CHILD ID="RIGHT">
                                         <BLOCK ID="3"/>
-                                        <POS Y="5387" X="7021"/>
+                                        <POS Y="5054" X="7021"/>
                                         <VAL>
-                                            <CONDITION ID="gra_4 &lt; 0"/>
+                                            <CONDITION ID="gra_4 > Sens"/>
                                         </VAL>
                                         <CHILD ID="STEPNEXT">
                                             <BLOCK ID="11"/>
-                                            <POS Y="5484" X="7021"/>
+                                            <POS Y="5151" X="7021"/>
                                             <VAL>
-                                                <NAME ID="MS"/>
-                                                <INDEX ID="3"/>
+                                                <NAME ID="Sen"/>
+                                                <INDEX ID="6"/>
                                             </VAL>
                                             <CHILD ID="NEXT">
-                                                <BLOCK ID="17"/>
-                                                <POS Y="5570" X="7021"/>
+                                                <BLOCK ID="11"/>
+                                                <POS Y="5238" X="7021"/>
                                                 <VAL>
-                                                    <DISPLAYTYPE ID="0"/>
-                                                    <DISPLAYINDEX ID="0"/>
-                                                    <DISPLAYSTRING ID="sigue curva 2;;;;;;;"/>
-                                                    <DISPLAYCHECKS ID="1;1;1;1;1;1;1;1"/>
-                                                    <DISPLAYMEDIAID ID="1"/>
-                                                    <DISPLAYCUSTOMIMAGENAME ID=""/>
+                                                    <NAME ID="DG"/>
+                                                    <INDEX ID="7"/>
                                                 </VAL>
                                             </CHILD>
                                         </CHILD>
                                     </CHILD>
                                     <CHILD ID="NEXT">
-                                        <BLOCK ID="11"/>
-                                        <POS Y="5741" X="6889"/>
+                                        <BLOCK ID="1"/>
+                                        <POS Y="5408" X="6889"/>
                                         <VAL>
-                                            <NAME ID="MAC"/>
-                                            <INDEX ID="1"/>
+                                            <CONDITION ID="gra_1 > Sens"/>
                                         </VAL>
+                                        <CHILD ID="LEFT">
+                                            <BLOCK ID="3"/>
+                                            <POS Y="5473" X="6756"/>
+                                            <VAL>
+                                                <CONDITION ID="gra_3 > Sens"/>
+                                            </VAL>
+                                            <CHILD ID="STEPNEXT">
+                                                <BLOCK ID="11"/>
+                                                <POS Y="5570" X="6756"/>
+                                                <VAL>
+                                                    <NAME ID="Sen"/>
+                                                    <INDEX ID="6"/>
+                                                </VAL>
+                                                <CHILD ID="NEXT">
+                                                    <BLOCK ID="11"/>
+                                                    <POS Y="5657" X="6756"/>
+                                                    <VAL>
+                                                        <NAME ID="MAI"/>
+                                                        <INDEX ID="4"/>
+                                                    </VAL>
+                                                    <CHILD ID="NEXT">
+                                                        <BLOCK ID="17"/>
+                                                        <POS Y="5744" X="6756"/>
+                                                        <VAL>
+                                                            <DISPLAYTYPE ID="0"/>
+                                                            <DISPLAYINDEX ID="1"/>
+                                                            <DISPLAYSTRING ID="sigue curva 1;gra_3;;;;;;"/>
+                                                            <DISPLAYCHECKS ID="1;0;1;1;1;1;1;1"/>
+                                                            <DISPLAYMEDIAID ID="1"/>
+                                                            <DISPLAYCUSTOMIMAGENAME ID=""/>
+                                                        </VAL>
+                                                    </CHILD>
+                                                </CHILD>
+                                            </CHILD>
+                                        </CHILD>
+                                        <CHILD ID="RIGHT">
+                                            <BLOCK ID="3"/>
+                                            <POS Y="5473" X="7021"/>
+                                            <VAL>
+                                                <CONDITION ID="gra_4 > Sens"/>
+                                            </VAL>
+                                            <CHILD ID="STEPNEXT">
+                                                <BLOCK ID="11"/>
+                                                <POS Y="5570" X="7021"/>
+                                                <VAL>
+                                                    <NAME ID="Sen"/>
+                                                    <INDEX ID="6"/>
+                                                </VAL>
+                                                <CHILD ID="NEXT">
+                                                    <BLOCK ID="11"/>
+                                                    <POS Y="5657" X="7021"/>
+                                                    <VAL>
+                                                        <NAME ID="MAD"/>
+                                                        <INDEX ID="5"/>
+                                                    </VAL>
+                                                    <CHILD ID="NEXT">
+                                                        <BLOCK ID="17"/>
+                                                        <POS Y="5744" X="7021"/>
+                                                        <VAL>
+                                                            <DISPLAYTYPE ID="0"/>
+                                                            <DISPLAYINDEX ID="1"/>
+                                                            <DISPLAYSTRING ID="sigue curva 2;gra_4;;;;;;"/>
+                                                            <DISPLAYCHECKS ID="1;0;1;1;1;1;1;1"/>
+                                                            <DISPLAYMEDIAID ID="1"/>
+                                                            <DISPLAYCUSTOMIMAGENAME ID=""/>
+                                                        </VAL>
+                                                    </CHILD>
+                                                </CHILD>
+                                            </CHILD>
+                                        </CHILD>
+                                        <CHILD ID="NEXT">
+                                            <BLOCK ID="11"/>
+                                            <POS Y="5914" X="6889"/>
+                                            <VAL>
+                                                <NAME ID="MAC"/>
+                                                <INDEX ID="1"/>
+                                            </VAL>
+                                        </CHILD>
                                     </CHILD>
                                 </CHILD>
                             </CHILD>
@@ -258,6 +277,7 @@
                 </CHILD>
             </CHILD>
         </SUBPROGRAM>
+        <SUBPROGRAM ID="7" TYPE="1" Y="4373" NAME="DG" X="6889"/>
     </Catalog>
     <Catalog GLOBALMTN="VJC6.0"/>
     <Catalog GLOABLETIP="VJC6.0">
@@ -265,6 +285,7 @@
             <POS NOTE="VP" Y="4474" X="7066"/>
             <POS NOTE="VN" Y="4559" X="7064"/>
             <POS NOTE="Sens" Y="4647" X="7066"/>
+            <POS NOTE="DG" Y="4729" X="7067"/>
         </Catalog>
         <Catalog ID="1"/>
         <Catalog ID="2"/>
@@ -272,6 +293,7 @@
         <Catalog ID="4"/>
         <Catalog ID="5"/>
         <Catalog ID="6"/>
+        <Catalog ID="7"/>
     </Catalog>
     <Catalog BLOCK="VJC6.0">
         <Catalog Calc="VJC6.0"/>
@@ -279,5 +301,5 @@
         <Catalog Var="VJC6.0"/>
         <Catalog BaseBlock="VJC6.0"/>
     </Catalog>
-    <Catalog SIZE="239"/>
+    <Catalog SIZE="10"/>
 </VJCC>
