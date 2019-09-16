@@ -954,13 +954,21 @@
             </Block>
             <Block>
                 <BLOCK ID="3"/>
-                <POS X="7035" Y="4713"/>
+                <POS X="7120" Y="4487"/>
                 <VAL>
                     <CONDITION ID="gyro_3 > gyro_1"/>
                 </VAL>
+                <CHILD ID="NEXT">
+                    <BLOCK ID="11"/>
+                    <POS X="7120" Y="5228"/>
+                    <VAL>
+                        <NAME ID="MAN"/>
+                        <INDEX ID="3"/>
+                    </VAL>
+                </CHILD>
                 <CHILD ID="STEPNEXT">
                     <BLOCK ID="30"/>
-                    <POS X="7035" Y="4810"/>
+                    <POS X="7120" Y="4584"/>
                     <VAL>
                         <GETVAL ID="Ac_3"/>
                         <GETAXIS ID="2"/>
@@ -968,13 +976,28 @@
                     </VAL>
                     <CHILD ID="NEXT">
                         <BLOCK ID="3"/>
-                        <POS X="7035" Y="4896"/>
+                        <POS X="7120" Y="4670"/>
                         <VAL>
                             <CONDITION ID="gyro_3 > 180"/>
                         </VAL>
+                        <CHILD ID="NEXT">
+                            <BLOCK ID="1"/>
+                            <POS X="7120" Y="4993"/>
+                            <VAL>
+                                <CONDITION ID="gyro_3 > G1"/>
+                            </VAL>
+                            <CHILD ID="LEFT">
+                                <BLOCK ID="11"/>
+                                <POS X="7008" Y="5058"/>
+                                <VAL>
+                                    <NAME ID="MAI"/>
+                                    <INDEX ID="4"/>
+                                </VAL>
+                            </CHILD>
+                        </CHILD>
                         <CHILD ID="STEPNEXT">
                             <BLOCK ID="30"/>
-                            <POS X="7035" Y="4993"/>
+                            <POS X="7120" Y="4767"/>
                             <VAL>
                                 <GETVAL ID="Ac_3"/>
                                 <GETAXIS ID="2"/>
@@ -982,7 +1005,7 @@
                             </VAL>
                             <CHILD ID="NEXT">
                                 <BLOCK ID="11"/>
-                                <POS X="7035" Y="5080"/>
+                                <POS X="7120" Y="4854"/>
                                 <VAL>
                                     <NAME ID="MAD"/>
                                     <INDEX ID="5"/>
@@ -1004,30 +1027,7 @@
                     <DISPLAYCUSTOMIMAGENAME ID=""/>
                 </VAL>
             </Block>
-            <Block>
-                <BLOCK ID="1"/>
-                <POS X="7406" Y="4590"/>
-                <VAL>
-                    <CONDITION ID="gyro_3 > G1"/>
-                </VAL>
-                <CHILD ID="LEFT">
-                    <BLOCK ID="11"/>
-                    <POS X="7293" Y="4655"/>
-                    <VAL>
-                        <NAME ID="MAI"/>
-                        <INDEX ID="4"/>
-                    </VAL>
-                </CHILD>
-                <CHILD ID="NEXT">
-                    <BLOCK ID="11"/>
-                    <POS X="7406" Y="4773"/>
-                    <VAL>
-                        <NAME ID="MAN"/>
-                        <INDEX ID="3"/>
-                    </VAL>
-                </CHILD>
-            </Block>
         </Catalog>
     </Catalog>
-    <Catalog SIZE="123"/>
+    <Catalog SIZE="91"/>
 </VJCC>
