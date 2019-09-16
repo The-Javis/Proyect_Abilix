@@ -1,12 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VJCC ID="6.0" TYPE="7" VERSION="1" NAME="">
-    <Catalog GLOBALVAL="VJC6.0"/>
+    <Catalog GLOBALVAL="VJC6.0">
+        <VAR ID="800" INDEX="1" NAME="VP"/>
+        <VAR ID="800" INDEX="2" NAME="VN"/>
+        <VAR ID="800" INDEX="3" NAME="Sens"/>
+    </Catalog>
     <Catalog GLOBALTREE="VJC6.0">
-        <Catalog SUBCOUNT="0" SCENEWIDTH="14400" ROTX="6889" SCENEHEIGHT="9000" MAIN="VJC6.0"/>
+        <Catalog SUBCOUNT="0" SCENEWIDTH="14400" ROTX="6889" SCENEHEIGHT="9000" MAIN="VJC6.0">
+            <BLOCK ID="36"/>
+            <POS Y="4459" X="6889"/>
+            <VAL>
+                <LEFTVALUE ID="VP"/>
+                <RIGHTVARONE ID=""/>
+                <RIGHTOPERATOR ID="4"/>
+                <RIGHTTWO ID=""/>
+            </VAL>
+            <CHILD ID="NEXT">
+                <BLOCK ID="36"/>
+                <POS Y="4546" X="6889"/>
+                <VAL>
+                    <LEFTVALUE ID="VN"/>
+                    <RIGHTVARONE ID="0"/>
+                    <RIGHTOPERATOR ID="1"/>
+                    <RIGHTTWO ID="VP"/>
+                </VAL>
+                <CHILD ID="NEXT">
+                    <BLOCK ID="36"/>
+                    <POS Y="4632" X="6889"/>
+                    <VAL>
+                        <LEFTVALUE ID="Sens"/>
+                        <RIGHTVARONE ID="2500"/>
+                        <RIGHTOPERATOR ID="4"/>
+                        <RIGHTTWO ID=""/>
+                    </VAL>
+                </CHILD>
+            </CHILD>
+        </Catalog>
     </Catalog>
     <Catalog GLOBALMTN="VJC6.0"/>
     <Catalog GLOABLETIP="VJC6.0">
-        <Catalog ID="0"/>
+        <Catalog ID="0">
+            <POS NOTE="VP" Y="4474" X="7066"/>
+            <POS NOTE="VN" Y="4559" X="7064"/>
+            <POS NOTE="Sens" Y="4647" X="7066"/>
+        </Catalog>
     </Catalog>
     <Catalog BLOCK="VJC6.0">
         <Catalog Calc="VJC6.0"/>
@@ -14,5 +51,5 @@
         <Catalog Var="VJC6.0"/>
         <Catalog BaseBlock="VJC6.0"/>
     </Catalog>
-    <Catalog SIZE="41"/>
+    <Catalog SIZE="101"/>
 </VJCC>
