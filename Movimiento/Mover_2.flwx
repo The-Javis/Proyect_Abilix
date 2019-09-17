@@ -45,7 +45,7 @@
                         <POS X="6889" Y="4719"/>
                         <VAL>
                             <LEFTVALUE ID="T"/>
-                            <RIGHTVARONE ID="5"/>
+                            <RIGHTVARONE ID="2"/>
                             <RIGHTOPERATOR ID="4"/>
                             <RIGHTTWO ID=""/>
                         </VAL>
@@ -245,5 +245,5 @@
         <Catalog Var="VJC6.0"/>
         <Catalog BaseBlock="VJC6.0"/>
     </Catalog>
-    <Catalog SIZE="205"/>
+    <Catalog SIZE="202"/>
 </VJCC>
