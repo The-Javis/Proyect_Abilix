@@ -626,62 +626,89 @@
                             <RIGHTTWO ID="10"/>
                         </VAL>
                         <CHILD ID="NEXT">
-                            <BLOCK ID="1"/>
+                            <BLOCK ID="36"/>
                             <POS X="6545" Y="4695"/>
                             <VAL>
-                                <CONDITION ID="G1 > 360"/>
+                                <LEFTVALUE ID="G2"/>
+                                <RIGHTVARONE ID="gyro_1"/>
+                                <RIGHTOPERATOR ID="1"/>
+                                <RIGHTTWO ID="10"/>
                             </VAL>
-                            <CHILD ID="LEFT">
-                                <BLOCK ID="36"/>
-                                <POS X="6432" Y="4760"/>
-                                <VAL>
-                                    <LEFTVALUE ID="G1"/>
-                                    <RIGHTVARONE ID="0"/>
-                                    <RIGHTOPERATOR ID="4"/>
-                                    <RIGHTTWO ID=""/>
-                                </VAL>
-                            </CHILD>
                             <CHILD ID="NEXT">
-                                <BLOCK ID="3"/>
-                                <POS X="6545" Y="4879"/>
+                                <BLOCK ID="1"/>
+                                <POS X="6545" Y="4782"/>
                                 <VAL>
-                                    <CONDITION ID="gyro_3 > G1"/>
+                                    <CONDITION ID="G1 > 360"/>
                                 </VAL>
-                                <CHILD ID="NEXT">
-                                    <BLOCK ID="11"/>
-                                    <POS X="6545" Y="5201"/>
+                                <CHILD ID="LEFT">
+                                    <BLOCK ID="36"/>
+                                    <POS X="6432" Y="4847"/>
                                     <VAL>
-                                        <NAME ID="MAN"/>
-                                        <INDEX ID="3"/>
+                                        <LEFTVALUE ID="G1"/>
+                                        <RIGHTVARONE ID="0"/>
+                                        <RIGHTOPERATOR ID="4"/>
+                                        <RIGHTTWO ID=""/>
                                     </VAL>
-                                    <CHILD ID="NEXT">
-                                        <BLOCK ID="17"/>
-                                        <POS X="6545" Y="5287"/>
+                                </CHILD>
+                                <CHILD ID="NEXT">
+                                    <BLOCK ID="1"/>
+                                    <POS X="6545" Y="4965"/>
+                                    <VAL>
+                                        <CONDITION ID="G2 &lt; 0"/>
+                                    </VAL>
+                                    <CHILD ID="LEFT">
+                                        <BLOCK ID="36"/>
+                                        <POS X="6432" Y="5030"/>
                                         <VAL>
-                                            <DISPLAYTYPE ID="0"/>
-                                            <DISPLAYINDEX ID="2"/>
-                                            <DISPLAYSTRING ID="gyro_3;com_1;gyro_1;;;G1;G2;"/>
-                                            <DISPLAYCHECKS ID="0;0;0;1;1;0;0;1"/>
-                                            <DISPLAYMEDIAID ID="1"/>
-                                            <DISPLAYCUSTOMIMAGENAME ID=""/>
+                                            <LEFTVALUE ID="G2"/>
+                                            <RIGHTVARONE ID="0"/>
+                                            <RIGHTOPERATOR ID="0"/>
+                                            <RIGHTTWO ID="G2"/>
                                         </VAL>
                                     </CHILD>
-                                </CHILD>
-                                <CHILD ID="STEPNEXT">
-                                    <BLOCK ID="30"/>
-                                    <POS X="6545" Y="4976"/>
-                                    <VAL>
-                                        <GETVAL ID="Ac_3"/>
-                                        <GETAXIS ID="2"/>
-                                        <GETDATATYPE ID="0"/>
-                                    </VAL>
                                     <CHILD ID="NEXT">
-                                        <BLOCK ID="11"/>
-                                        <POS X="6545" Y="5062"/>
+                                        <BLOCK ID="3"/>
+                                        <POS X="6545" Y="5149"/>
                                         <VAL>
-                                            <NAME ID="MAI"/>
-                                            <INDEX ID="4"/>
+                                            <CONDITION ID="gyro_3 > G1"/>
                                         </VAL>
+                                        <CHILD ID="NEXT">
+                                            <BLOCK ID="11"/>
+                                            <POS X="6545" Y="5471"/>
+                                            <VAL>
+                                                <NAME ID="MAN"/>
+                                                <INDEX ID="3"/>
+                                            </VAL>
+                                            <CHILD ID="NEXT">
+                                                <BLOCK ID="17"/>
+                                                <POS X="6545" Y="5558"/>
+                                                <VAL>
+                                                    <DISPLAYTYPE ID="0"/>
+                                                    <DISPLAYINDEX ID="2"/>
+                                                    <DISPLAYSTRING ID="gyro_3;com_1;gyro_1;;;G1;G2;"/>
+                                                    <DISPLAYCHECKS ID="0;0;0;1;1;0;0;1"/>
+                                                    <DISPLAYMEDIAID ID="1"/>
+                                                    <DISPLAYCUSTOMIMAGENAME ID=""/>
+                                                </VAL>
+                                            </CHILD>
+                                        </CHILD>
+                                        <CHILD ID="STEPNEXT">
+                                            <BLOCK ID="30"/>
+                                            <POS X="6545" Y="5246"/>
+                                            <VAL>
+                                                <GETVAL ID="Ac_3"/>
+                                                <GETAXIS ID="2"/>
+                                                <GETDATATYPE ID="0"/>
+                                            </VAL>
+                                            <CHILD ID="NEXT">
+                                                <BLOCK ID="11"/>
+                                                <POS X="6545" Y="5332"/>
+                                                <VAL>
+                                                    <NAME ID="MAI"/>
+                                                    <INDEX ID="4"/>
+                                                </VAL>
+                                            </CHILD>
+                                        </CHILD>
                                     </CHILD>
                                 </CHILD>
                             </CHILD>
@@ -993,48 +1020,20 @@
             </Block>
             <Block>
                 <BLOCK ID="3"/>
-                <POS X="6966" Y="4514"/>
+                <POS X="7271" Y="4488"/>
                 <VAL>
                     <CONDITION ID="gyro_3 > 25"/>
                 </VAL>
                 <CHILD ID="NEXT">
                     <BLOCK ID="1"/>
-                    <POS X="6966" Y="4899"/>
+                    <POS X="7271" Y="4873"/>
                     <VAL>
                         <CONDITION ID="gyro_3 > G1"/>
                     </VAL>
-                    <CHILD ID="NEXT">
-                        <BLOCK ID="36"/>
-                        <POS X="6966" Y="4991"/>
-                        <VAL>
-                            <LEFTVALUE ID="G1"/>
-                            <RIGHTVARONE ID="gyro_1"/>
-                            <RIGHTOPERATOR ID="0"/>
-                            <RIGHTTWO ID="10"/>
-                        </VAL>
-                        <CHILD ID="NEXT">
-                            <BLOCK ID="36"/>
-                            <POS X="6966" Y="5078"/>
-                            <VAL>
-                                <LEFTVALUE ID="G2"/>
-                                <RIGHTVARONE ID="gyro_1"/>
-                                <RIGHTOPERATOR ID="1"/>
-                                <RIGHTTWO ID="10"/>
-                            </VAL>
-                            <CHILD ID="NEXT">
-                                <BLOCK ID="11"/>
-                                <POS X="6966" Y="5164"/>
-                                <VAL>
-                                    <NAME ID="MAD"/>
-                                    <INDEX ID="5"/>
-                                </VAL>
-                            </CHILD>
-                        </CHILD>
-                    </CHILD>
                 </CHILD>
                 <CHILD ID="STEPNEXT">
                     <BLOCK ID="30"/>
-                    <POS X="6966" Y="4611"/>
+                    <POS X="7271" Y="4585"/>
                     <VAL>
                         <GETVAL ID="Ac_3"/>
                         <GETAXIS ID="2"/>
@@ -1042,7 +1041,7 @@
                     </VAL>
                     <CHILD ID="NEXT">
                         <BLOCK ID="3"/>
-                        <POS X="6966" Y="4698"/>
+                        <POS X="7271" Y="4672"/>
                         <VAL>
                             <CONDITION ID="gyro_3 > 180"/>
                         </VAL>
@@ -1061,7 +1060,25 @@
                     <DISPLAYCUSTOMIMAGENAME ID=""/>
                 </VAL>
             </Block>
+            <Block>
+                <BLOCK ID="36"/>
+                <POS X="7013" Y="5079"/>
+                <VAL>
+                    <LEFTVALUE ID="G2"/>
+                    <RIGHTVARONE ID="gyro_1"/>
+                    <RIGHTOPERATOR ID="1"/>
+                    <RIGHTTWO ID="10"/>
+                </VAL>
+                <CHILD ID="NEXT">
+                    <BLOCK ID="11"/>
+                    <POS X="7013" Y="5166"/>
+                    <VAL>
+                        <NAME ID="MAD"/>
+                        <INDEX ID="5"/>
+                    </VAL>
+                </CHILD>
+            </Block>
         </Catalog>
     </Catalog>
-    <Catalog SIZE="15"/>
+    <Catalog SIZE="196"/>
 </VJCC>
