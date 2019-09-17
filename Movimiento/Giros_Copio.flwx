@@ -7,9 +7,9 @@
         <VAR ID="800" INDEX="2" NAME="VN"/>
     </Catalog>
     <Catalog GLOBALTREE="VJC6.0">
-        <Catalog MAIN="VJC6.0" SUBCOUNT="5" SCENEHEIGHT="9000" SCENEWIDTH="14400" ROTX="6889">
+        <Catalog MAIN="VJC6.0" SUBCOUNT="5" SCENEHEIGHT="9000" SCENEWIDTH="14400" ROTX="6545">
             <BLOCK ID="36"/>
-            <POS X="6889" Y="4459"/>
+            <POS X="6545" Y="4338"/>
             <VAL>
                 <LEFTVALUE ID="VP"/>
                 <RIGHTVARONE ID="25"/>
@@ -18,7 +18,7 @@
             </VAL>
             <CHILD ID="NEXT">
                 <BLOCK ID="36"/>
-                <POS X="6889" Y="4546"/>
+                <POS X="6545" Y="4425"/>
                 <VAL>
                     <LEFTVALUE ID="VN"/>
                     <RIGHTVARONE ID="0"/>
@@ -27,14 +27,14 @@
                 </VAL>
                 <CHILD ID="NEXT">
                     <BLOCK ID="5"/>
-                    <POS X="6889" Y="4632"/>
+                    <POS X="6545" Y="4511"/>
                     <VAL>
                         <LOOPTIMES ID="0"/>
                         <FOREVERLOOP ID="true"/>
                     </VAL>
                     <CHILD ID="STEPNEXT">
                         <BLOCK ID="30"/>
-                        <POS X="6889" Y="4729"/>
+                        <POS X="6545" Y="4608"/>
                         <VAL>
                             <GETVAL ID="Ac_1"/>
                             <GETAXIS ID="2"/>
@@ -42,13 +42,13 @@
                         </VAL>
                         <CHILD ID="NEXT">
                             <BLOCK ID="3"/>
-                            <POS X="6889" Y="4816"/>
+                            <POS X="6545" Y="4695"/>
                             <VAL>
                                 <CONDITION ID="gyro_1 > 20"/>
                             </VAL>
                             <CHILD ID="NEXT">
                                 <BLOCK ID="11"/>
-                                <POS X="6889" Y="5460"/>
+                                <POS X="6545" Y="5339"/>
                                 <VAL>
                                     <NAME ID="MStop"/>
                                     <INDEX ID="5"/>
@@ -56,7 +56,7 @@
                             </CHILD>
                             <CHILD ID="STEPNEXT">
                                 <BLOCK ID="30"/>
-                                <POS X="6889" Y="4913"/>
+                                <POS X="6545" Y="4792"/>
                                 <VAL>
                                     <GETVAL ID="Ac_1"/>
                                     <GETAXIS ID="2"/>
@@ -64,13 +64,13 @@
                                 </VAL>
                                 <CHILD ID="NEXT">
                                     <BLOCK ID="3"/>
-                                    <POS X="6889" Y="5000"/>
+                                    <POS X="6545" Y="4879"/>
                                     <VAL>
                                         <CONDITION ID="gyro_1 > 180"/>
                                     </VAL>
                                     <CHILD ID="NEXT">
                                         <BLOCK ID="11"/>
-                                        <POS X="6889" Y="5322"/>
+                                        <POS X="6545" Y="5201"/>
                                         <VAL>
                                             <NAME ID="MAPP"/>
                                             <INDEX ID="4"/>
@@ -78,7 +78,7 @@
                                     </CHILD>
                                     <CHILD ID="STEPNEXT">
                                         <BLOCK ID="30"/>
-                                        <POS X="6889" Y="5097"/>
+                                        <POS X="6545" Y="4976"/>
                                         <VAL>
                                             <GETVAL ID="Ac_1"/>
                                             <GETAXIS ID="2"/>
@@ -86,7 +86,7 @@
                                         </VAL>
                                         <CHILD ID="NEXT">
                                             <BLOCK ID="11"/>
-                                            <POS X="6889" Y="5183"/>
+                                            <POS X="6545" Y="5062"/>
                                             <VAL>
                                                 <NAME ID="MANN"/>
                                                 <INDEX ID="3"/>
@@ -104,40 +104,40 @@
             <BLOCK ID="26"/>
             <POS X="6889" Y="4459"/>
             <VAL>
-                <MOTORPARAMETER ID="129,0,VN;129,0,VP;0,1,-20;0,1,-20"/>
-                <CURRENTPORT ID="1"/>
+                <MOTORPARAMETER ID="129,0,VN;129,0,VP;0,0,-20;0,0,-20"/>
+                <CURRENTPORT ID="0"/>
             </VAL>
         </SUBPROGRAM>
         <SUBPROGRAM ID="2" X="6889" NAME="MAPN" Y="4373" TYPE="1">
             <BLOCK ID="26"/>
             <POS X="6889" Y="4459"/>
             <VAL>
-                <MOTORPARAMETER ID="129,0,VP;129,0,VN;0,1,-20;0,1,-20"/>
-                <CURRENTPORT ID="1"/>
+                <MOTORPARAMETER ID="129,0,VP;129,0,VN;0,0,-20;0,0,-20"/>
+                <CURRENTPORT ID="0"/>
             </VAL>
         </SUBPROGRAM>
         <SUBPROGRAM ID="3" X="6889" NAME="MANN" Y="4373" TYPE="1">
             <BLOCK ID="26"/>
             <POS X="6889" Y="4459"/>
             <VAL>
-                <MOTORPARAMETER ID="129,0,VN;129,0,VN;0,1,-20;0,1,-20"/>
-                <CURRENTPORT ID="1"/>
+                <MOTORPARAMETER ID="129,0,VN;129,0,VN;0,0,-20;0,0,-20"/>
+                <CURRENTPORT ID="0"/>
             </VAL>
         </SUBPROGRAM>
         <SUBPROGRAM ID="4" X="6889" NAME="MAPP" Y="4373" TYPE="1">
             <BLOCK ID="26"/>
             <POS X="6889" Y="4459"/>
             <VAL>
-                <MOTORPARAMETER ID="129,0,VP;129,0,VP;0,1,-20;0,1,-20"/>
-                <CURRENTPORT ID="1"/>
+                <MOTORPARAMETER ID="129,0,VP;129,0,VP;0,0,-20;0,0,-20"/>
+                <CURRENTPORT ID="0"/>
             </VAL>
         </SUBPROGRAM>
         <SUBPROGRAM ID="5" X="6889" NAME="MStop" Y="4373" TYPE="1">
             <BLOCK ID="26"/>
             <POS X="6889" Y="4459"/>
             <VAL>
-                <MOTORPARAMETER ID="128,0,0;128,0,0;0,1,-20;0,1,-20"/>
-                <CURRENTPORT ID="1"/>
+                <MOTORPARAMETER ID="128,0,0;128,0,0;0,0,-20;0,0,-20"/>
+                <CURRENTPORT ID="0"/>
             </VAL>
         </SUBPROGRAM>
     </Catalog>
@@ -156,5 +156,5 @@
         <Catalog Var="VJC6.0"/>
         <Catalog BaseBlock="VJC6.0"/>
     </Catalog>
-    <Catalog SIZE="195"/>
+    <Catalog SIZE="67"/>
 </VJCC>
