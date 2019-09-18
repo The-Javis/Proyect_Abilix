@@ -873,16 +873,47 @@
                                                 <CONDITION ID="gyro_1 &lt; G1"/>
                                             </VAL>
                                             <CHILD ID="NEXT">
-                                                <BLOCK ID="11"/>
-                                                <POS Y="5558" X="6545"/>
+                                                <BLOCK ID="3"/>
+                                                <POS Y="5461" X="6545"/>
                                                 <VAL>
-                                                    <NAME ID="MStop"/>
-                                                    <INDEX ID="5"/>
+                                                    <CONDITION ID="gyro_1 > G1"/>
                                                 </VAL>
                                                 <CHILD ID="NEXT">
-                                                    <BLOCK ID="7"/>
-                                                    <POS Y="5644" X="6545"/>
-                                                    <VAL/>
+                                                    <BLOCK ID="15"/>
+                                                    <POS Y="5783" X="6545"/>
+                                                    <VAL>
+                                                        <LIGHTCOLOR ID="1"/>
+                                                        <LIGHTMODE ID="0"/>
+                                                    </VAL>
+                                                    <CHILD ID="NEXT">
+                                                        <BLOCK ID="11"/>
+                                                        <POS Y="5869" X="6545"/>
+                                                        <VAL>
+                                                            <NAME ID="MStop"/>
+                                                            <INDEX ID="5"/>
+                                                        </VAL>
+                                                        <CHILD ID="NEXT">
+                                                            <BLOCK ID="7"/>
+                                                            <POS Y="5956" X="6545"/>
+                                                            <VAL/>
+                                                        </CHILD>
+                                                    </CHILD>
+                                                </CHILD>
+                                                <CHILD ID="STEPNEXT">
+                                                    <BLOCK ID="11"/>
+                                                    <POS Y="5558" X="6545"/>
+                                                    <VAL>
+                                                        <NAME ID="Giros1"/>
+                                                        <INDEX ID="7"/>
+                                                    </VAL>
+                                                    <CHILD ID="NEXT">
+                                                        <BLOCK ID="15"/>
+                                                        <POS Y="5644" X="6545"/>
+                                                        <VAL>
+                                                            <LIGHTCOLOR ID="0"/>
+                                                            <LIGHTMODE ID="1"/>
+                                                        </VAL>
+                                                    </CHILD>
                                                 </CHILD>
                                             </CHILD>
                                             <CHILD ID="STEPNEXT">
@@ -893,27 +924,12 @@
                                                     <INDEX ID="7"/>
                                                 </VAL>
                                                 <CHILD ID="NEXT">
-                                                    <BLOCK ID="1"/>
+                                                    <BLOCK ID="15"/>
                                                     <POS Y="5322" X="6545"/>
                                                     <VAL>
-                                                        <CONDITION ID="G2 == 1"/>
+                                                        <LIGHTCOLOR ID="0"/>
+                                                        <LIGHTMODE ID="0"/>
                                                     </VAL>
-                                                    <CHILD ID="LEFT">
-                                                        <BLOCK ID="11"/>
-                                                        <POS Y="5387" X="6432"/>
-                                                        <VAL>
-                                                            <NAME ID="MLeft"/>
-                                                            <INDEX ID="1"/>
-                                                        </VAL>
-                                                    </CHILD>
-                                                    <CHILD ID="RIGHT">
-                                                        <BLOCK ID="11"/>
-                                                        <POS Y="5387" X="6657"/>
-                                                        <VAL>
-                                                            <NAME ID="MRigth"/>
-                                                            <INDEX ID="2"/>
-                                                        </VAL>
-                                                    </CHILD>
                                                 </CHILD>
                                             </CHILD>
                                         </CHILD>
@@ -961,7 +977,31 @@
         <Catalog Calc="VJC6.0"/>
         <Catalog Log="VJC6.0"/>
         <Catalog Var="VJC6.0"/>
-        <Catalog BaseBlock="VJC6.0"/>
+        <Catalog BaseBlock="VJC6.0">
+            <Block>
+                <BLOCK ID="1"/>
+                <POS Y="5308" X="6976"/>
+                <VAL>
+                    <CONDITION ID="G2 == 1"/>
+                </VAL>
+                <CHILD ID="LEFT">
+                    <BLOCK ID="11"/>
+                    <POS Y="5373" X="6863"/>
+                    <VAL>
+                        <NAME ID="MLeft"/>
+                        <INDEX ID="1"/>
+                    </VAL>
+                </CHILD>
+                <CHILD ID="RIGHT">
+                    <BLOCK ID="11"/>
+                    <POS Y="5373" X="7088"/>
+                    <VAL>
+                        <NAME ID="MRigth"/>
+                        <INDEX ID="2"/>
+                    </VAL>
+                </CHILD>
+            </Block>
+        </Catalog>
     </Catalog>
-    <Catalog SIZE="131"/>
+    <Catalog SIZE="246"/>
 </VJCC>
