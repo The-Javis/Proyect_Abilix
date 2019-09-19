@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VJCC VERSION="1" NAME="Test0.0.1" ID="6.0" TYPE="7">
+<VJCC ID="6.0" TYPE="7" VERSION="1" NAME="Test0.0.2">
     <Catalog GLOBALVAL="VJC6.0">
-        <VAR INDEX="1" NAME="0&amp;0" ID="0"/>
-        <VAR INDEX="2" NAME="0&amp;0" ID="0"/>
-        <VAR INDEX="1" NAME="gra_1" ID="2"/>
-        <VAR INDEX="2" NAME="gra_2" ID="2"/>
-        <VAR INDEX="3" NAME="gra_3" ID="2"/>
-        <VAR INDEX="4" NAME="gra_4" ID="2"/>
-        <VAR INDEX="1" NAME="gyro_1" ID="4"/>
-        <VAR INDEX="2" NAME="gyro_2" ID="4"/>
-        <VAR INDEX="3" NAME="0&amp;0" ID="4"/>
-        <VAR INDEX="1" NAME="0&amp;0" ID="5"/>
-        <VAR INDEX="1" NAME="touch_1" ID="6"/>
-        <VAR INDEX="2" NAME="0&amp;0" ID="6"/>
-        <VAR INDEX="1" NAME="VP" ID="800"/>
-        <VAR INDEX="2" NAME="VN" ID="800"/>
-        <VAR INDEX="3" NAME="Sens" ID="800"/>
-        <VAR INDEX="4" NAME="T" ID="800"/>
-        <VAR INDEX="5" NAME="cus_1" ID="800"/>
-        <VAR INDEX="6" NAME="cus_2" ID="800"/>
-        <VAR INDEX="7" NAME="cus_3" ID="800"/>
-        <VAR INDEX="8" NAME="cus_4" ID="800"/>
-        <VAR INDEX="9" NAME="Estacion" ID="800"/>
-        <VAR INDEX="10" NAME="G1" ID="800"/>
-        <VAR INDEX="11" NAME="G2" ID="800"/>
-        <VAR INDEX="12" NAME="G" ID="800"/>
-        <VAR INDEX="13" NAME="Pm" ID="800"/>
+        <VAR ID="0" NAME="0&amp;0" INDEX="1"/>
+        <VAR ID="0" NAME="0&amp;0" INDEX="2"/>
+        <VAR ID="2" NAME="gra_1" INDEX="1"/>
+        <VAR ID="2" NAME="gra_2" INDEX="2"/>
+        <VAR ID="2" NAME="gra_3" INDEX="3"/>
+        <VAR ID="2" NAME="0&amp;0" INDEX="4"/>
+        <VAR ID="4" NAME="gyro_1" INDEX="1"/>
+        <VAR ID="4" NAME="gyro_2" INDEX="2"/>
+        <VAR ID="5" NAME="0&amp;0" INDEX="1"/>
+        <VAR ID="6" NAME="touch_1" INDEX="1"/>
+        <VAR ID="6" NAME="0&amp;0" INDEX="2"/>
+        <VAR ID="7" NAME="color_1" INDEX="1"/>
+        <VAR ID="800" NAME="VP" INDEX="1"/>
+        <VAR ID="800" NAME="VN" INDEX="2"/>
+        <VAR ID="800" NAME="Sens" INDEX="3"/>
+        <VAR ID="800" NAME="T" INDEX="4"/>
+        <VAR ID="800" NAME="cus_1" INDEX="5"/>
+        <VAR ID="800" NAME="cus_2" INDEX="6"/>
+        <VAR ID="800" NAME="cus_3" INDEX="7"/>
+        <VAR ID="800" NAME="cus_4" INDEX="8"/>
+        <VAR ID="800" NAME="Estacion" INDEX="9"/>
+        <VAR ID="800" NAME="G1" INDEX="10"/>
+        <VAR ID="800" NAME="G2" INDEX="11"/>
+        <VAR ID="800" NAME="G" INDEX="12"/>
+        <VAR ID="800" NAME="Pm" INDEX="13"/>
     </Catalog>
     <Catalog GLOBALTREE="VJC6.0">
-        <Catalog SCENEWIDTH="14400" SCENEHEIGHT="9000" SUBCOUNT="12" ROTX="6545" MAIN="VJC6.0">
+        <Catalog ROTX="6545" SUBCOUNT="11" MAIN="VJC6.0" SCENEWIDTH="14400" SCENEHEIGHT="9000">
             <BLOCK ID="36"/>
-            <POS X="6545" Y="4338"/>
+            <POS Y="4338" X="6545"/>
             <VAL>
                 <LEFTVALUE ID="VP"/>
                 <RIGHTVARONE ID="25"/>
@@ -39,7 +39,7 @@
             </VAL>
             <CHILD ID="NEXT">
                 <BLOCK ID="36"/>
-                <POS X="6545" Y="4425"/>
+                <POS Y="4425" X="6545"/>
                 <VAL>
                     <LEFTVALUE ID="VN"/>
                     <RIGHTVARONE ID="0"/>
@@ -48,23 +48,23 @@
                 </VAL>
                 <CHILD ID="NEXT">
                     <BLOCK ID="36"/>
-                    <POS X="6545" Y="4511"/>
+                    <POS Y="4511" X="6545"/>
                     <VAL>
                         <LEFTVALUE ID="Sens"/>
-                        <RIGHTVARONE ID="2500"/>
+                        <RIGHTVARONE ID="3500"/>
                         <RIGHTOPERATOR ID="4"/>
                         <RIGHTTWO ID=""/>
                     </VAL>
                     <CHILD ID="NEXT">
                         <BLOCK ID="11"/>
-                        <POS X="6545" Y="4598"/>
+                        <POS Y="4598" X="6545"/>
                         <VAL>
                             <NAME ID="Sens"/>
                             <INDEX ID="10"/>
                         </VAL>
                         <CHILD ID="NEXT">
                             <BLOCK ID="36"/>
-                            <POS X="6545" Y="4685"/>
+                            <POS Y="4685" X="6545"/>
                             <VAL>
                                 <LEFTVALUE ID="T"/>
                                 <RIGHTVARONE ID="2"/>
@@ -72,123 +72,173 @@
                                 <RIGHTTWO ID=""/>
                             </VAL>
                             <CHILD ID="NEXT">
-                                <BLOCK ID="11"/>
-                                <POS X="6545" Y="4771"/>
+                                <BLOCK ID="5"/>
+                                <POS Y="4771" X="6545"/>
                                 <VAL>
-                                    <NAME ID="Giro"/>
-                                    <INDEX ID="12"/>
+                                    <LOOPTIMES ID="0"/>
+                                    <FOREVERLOOP ID="true"/>
                                 </VAL>
+                                <CHILD ID="STEPNEXT">
+                                    <BLOCK ID="11"/>
+                                    <POS Y="4868" X="6545"/>
+                                    <VAL>
+                                        <NAME ID="Sensores"/>
+                                        <INDEX ID="6"/>
+                                    </VAL>
+                                    <CHILD ID="NEXT">
+                                        <BLOCK ID="17"/>
+                                        <POS Y="4955" X="6545"/>
+                                        <VAL>
+                                            <DISPLAYTYPE ID="0"/>
+                                            <DISPLAYINDEX ID="3"/>
+                                            <DISPLAYSTRING ID="gra_1;gra_2;gra_3;color_1;;;;"/>
+                                            <DISPLAYCHECKS ID="0;0;0;0;1;1;1;1"/>
+                                            <DISPLAYMEDIAID ID="1"/>
+                                            <DISPLAYCUSTOMIMAGENAME ID=""/>
+                                        </VAL>
+                                        <CHILD ID="NEXT">
+                                            <BLOCK ID="1"/>
+                                            <POS Y="5041" X="6545"/>
+                                            <VAL>
+                                                <CONDITION ID="color_1 &lt; 4"/>
+                                            </VAL>
+                                            <CHILD ID="LEFT">
+                                                <BLOCK ID="15"/>
+                                                <POS Y="5106" X="6432"/>
+                                                <VAL>
+                                                    <LIGHTCOLOR ID="0"/>
+                                                    <LIGHTMODE ID="0"/>
+                                                </VAL>
+                                            </CHILD>
+                                            <CHILD ID="RIGHT">
+                                                <BLOCK ID="15"/>
+                                                <POS Y="5106" X="6657"/>
+                                                <VAL>
+                                                    <LIGHTCOLOR ID="0"/>
+                                                    <LIGHTMODE ID="1"/>
+                                                </VAL>
+                                            </CHILD>
+                                            <CHILD ID="NEXT">
+                                                <BLOCK ID="15"/>
+                                                <POS Y="5225" X="6545"/>
+                                                <VAL>
+                                                    <LIGHTCOLOR ID="1"/>
+                                                    <LIGHTMODE ID="0"/>
+                                                </VAL>
+                                            </CHILD>
+                                        </CHILD>
+                                    </CHILD>
+                                </CHILD>
                             </CHILD>
                         </CHILD>
                     </CHILD>
                 </CHILD>
             </CHILD>
         </Catalog>
-        <SUBPROGRAM X="6889" Y="4373" NAME="MLeft" ID="1" TYPE="1">
+        <SUBPROGRAM ID="1" TYPE="1" NAME="MLeft" Y="4373" X="6889">
             <BLOCK ID="26"/>
-            <POS X="6889" Y="4459"/>
+            <POS Y="4459" X="6889"/>
             <VAL>
                 <MOTORPARAMETER ID="129,0,VN;129,0,VN;0,0,-20;0,0,-20"/>
                 <CURRENTPORT ID="0"/>
             </VAL>
         </SUBPROGRAM>
-        <SUBPROGRAM X="6889" Y="4373" NAME="MRigth" ID="2" TYPE="1">
+        <SUBPROGRAM ID="2" TYPE="1" NAME="MRigth" Y="4373" X="6889">
             <BLOCK ID="26"/>
-            <POS X="6889" Y="4459"/>
+            <POS Y="4459" X="6889"/>
             <VAL>
                 <MOTORPARAMETER ID="129,0,VP;129,0,VP;0,0,-20;0,0,-20"/>
                 <CURRENTPORT ID="0"/>
             </VAL>
         </SUBPROGRAM>
-        <SUBPROGRAM X="6889" Y="4373" NAME="MAbanzar" ID="3" TYPE="1">
+        <SUBPROGRAM ID="3" TYPE="1" NAME="MAbanzar" Y="4373" X="6889">
             <BLOCK ID="26"/>
-            <POS X="6889" Y="4459"/>
+            <POS Y="4459" X="6889"/>
             <VAL>
                 <MOTORPARAMETER ID="129,0,VN;129,0,VP;0,0,-20;0,0,-20"/>
                 <CURRENTPORT ID="0"/>
             </VAL>
         </SUBPROGRAM>
-        <SUBPROGRAM X="6889" Y="4373" NAME="MAtras" ID="4" TYPE="1">
+        <SUBPROGRAM ID="4" TYPE="1" NAME="MAtras" Y="4373" X="6889">
             <BLOCK ID="26"/>
-            <POS X="6889" Y="4459"/>
+            <POS Y="4459" X="6889"/>
             <VAL>
                 <MOTORPARAMETER ID="129,0,VP;129,0,VN;0,0,-20;0,0,-20"/>
                 <CURRENTPORT ID="0"/>
             </VAL>
         </SUBPROGRAM>
-        <SUBPROGRAM X="6889" Y="4373" NAME="MStop" ID="5" TYPE="1">
+        <SUBPROGRAM ID="5" TYPE="1" NAME="MStop" Y="4373" X="6889">
             <BLOCK ID="26"/>
-            <POS X="6889" Y="4459"/>
+            <POS Y="4459" X="6889"/>
             <VAL>
                 <MOTORPARAMETER ID="128,0,0;128,0,0;0,0,-20;0,0,-20"/>
                 <CURRENTPORT ID="0"/>
             </VAL>
         </SUBPROGRAM>
-        <SUBPROGRAM X="6889" Y="4373" NAME="Sensores" ID="6" TYPE="1">
-            <BLOCK ID="28"/>
-            <POS X="6889" Y="4459"/>
+        <SUBPROGRAM ID="6" TYPE="1" NAME="Sensores" Y="4373" X="6889">
+            <BLOCK ID="33"/>
+            <POS Y="4459" X="6889"/>
             <VAL>
-                <PORT ID="4"/>
-                <VARGRAYSCALE ID="gra_2"/>
+                <VARCOLORSENSOR ID="clc_1"/>
             </VAL>
             <CHILD ID="NEXT">
                 <BLOCK ID="28"/>
-                <POS X="6889" Y="4545"/>
+                <POS Y="4546" X="6889"/>
                 <VAL>
-                    <PORT ID="2"/>
-                    <VARGRAYSCALE ID="gra_4"/>
+                    <PORT ID="3"/>
+                    <VARGRAYSCALE ID="gra_1"/>
                 </VAL>
                 <CHILD ID="NEXT">
                     <BLOCK ID="28"/>
-                    <POS X="6889" Y="4632"/>
+                    <POS Y="4632" X="6889"/>
                     <VAL>
-                        <PORT ID="3"/>
-                        <VARGRAYSCALE ID="gra_3"/>
+                        <PORT ID="2"/>
+                        <VARGRAYSCALE ID="gra_2"/>
                     </VAL>
                     <CHILD ID="NEXT">
                         <BLOCK ID="28"/>
-                        <POS X="6889" Y="4718"/>
+                        <POS Y="4719" X="6889"/>
                         <VAL>
                             <PORT ID="1"/>
-                            <VARGRAYSCALE ID="gra_1"/>
+                            <VARGRAYSCALE ID="gra_3"/>
                         </VAL>
                     </CHILD>
                 </CHILD>
             </CHILD>
         </SUBPROGRAM>
-        <SUBPROGRAM X="6889" Y="4373" NAME="Giros1" ID="7" TYPE="1">
+        <SUBPROGRAM ID="7" TYPE="1" NAME="Giros1" Y="4373" X="6889">
             <BLOCK ID="30"/>
-            <POS X="6889" Y="4459"/>
+            <POS Y="4459" X="6889"/>
             <VAL>
                 <GETVAL ID="Ac_1"/>
                 <GETAXIS ID="2"/>
                 <GETDATATYPE ID="0"/>
             </VAL>
         </SUBPROGRAM>
-        <SUBPROGRAM X="6889" Y="4373" NAME="STest" ID="8" TYPE="1">
+        <SUBPROGRAM ID="8" TYPE="1" NAME="STest" Y="4373" X="6889">
             <BLOCK ID="5"/>
-            <POS X="6889" Y="4459"/>
+            <POS Y="4459" X="6889"/>
             <VAL>
                 <LOOPTIMES ID="0"/>
                 <FOREVERLOOP ID="true"/>
             </VAL>
             <CHILD ID="STEPNEXT">
                 <BLOCK ID="11"/>
-                <POS X="6889" Y="4556"/>
+                <POS Y="4556" X="6889"/>
                 <VAL>
                     <NAME ID="Sensores"/>
                     <INDEX ID="6"/>
                 </VAL>
                 <CHILD ID="NEXT">
                     <BLOCK ID="11"/>
-                    <POS X="6889" Y="4642"/>
+                    <POS Y="4642" X="6889"/>
                     <VAL>
                         <NAME ID="Giros1"/>
                         <INDEX ID="7"/>
                     </VAL>
                     <CHILD ID="NEXT">
                         <BLOCK ID="17"/>
-                        <POS X="6889" Y="4729"/>
+                        <POS Y="4729" X="6889"/>
                         <VAL>
                             <DISPLAYTYPE ID="0"/>
                             <DISPLAYINDEX ID="4"/>
@@ -201,15 +251,15 @@
                 </CHILD>
             </CHILD>
         </SUBPROGRAM>
-        <SUBPROGRAM X="6889" Y="4373" NAME="TStop" ID="9" TYPE="1">
+        <SUBPROGRAM ID="9" TYPE="1" NAME="TStop" Y="4373" X="6889">
             <BLOCK ID="1"/>
-            <POS X="6889" Y="4459"/>
+            <POS Y="4459" X="6889"/>
             <VAL>
                 <CONDITION ID="time_1 > T"/>
             </VAL>
             <CHILD ID="LEFT">
                 <BLOCK ID="11"/>
-                <POS X="6776" Y="4524"/>
+                <POS Y="4524" X="6776"/>
                 <VAL>
                     <NAME ID="MStop"/>
                     <INDEX ID="5"/>
@@ -217,29 +267,29 @@
             </CHILD>
             <CHILD ID="RIGHT">
                 <BLOCK ID="11"/>
-                <POS X="7001" Y="4524"/>
+                <POS Y="4524" X="7001"/>
                 <VAL>
                     <NAME ID="MAbanzar"/>
                     <INDEX ID="3"/>
                 </VAL>
             </CHILD>
         </SUBPROGRAM>
-        <SUBPROGRAM X="6545" Y="4252" NAME="Sens" ID="10" TYPE="1">
+        <SUBPROGRAM ID="10" TYPE="1" NAME="Sens" Y="4252" X="6545">
             <BLOCK ID="1"/>
-            <POS X="6545" Y="4338"/>
+            <POS Y="4338" X="6545"/>
             <VAL>
                 <CONDITION ID="Sens == 0"/>
             </VAL>
             <CHILD ID="LEFT">
                 <BLOCK ID="5"/>
-                <POS X="6392" Y="4403"/>
+                <POS Y="4403" X="6392"/>
                 <VAL>
                     <LOOPTIMES ID="0"/>
                     <FOREVERLOOP ID="true"/>
                 </VAL>
                 <CHILD ID="NEXT">
                     <BLOCK ID="36"/>
-                    <POS X="6392" Y="5459"/>
+                    <POS Y="5459" X="6392"/>
                     <VAL>
                         <LEFTVALUE ID="cus_1"/>
                         <RIGHTVARONE ID="0"/>
@@ -248,7 +298,7 @@
                     </VAL>
                     <CHILD ID="NEXT">
                         <BLOCK ID="36"/>
-                        <POS X="6392" Y="5546"/>
+                        <POS Y="5546" X="6392"/>
                         <VAL>
                             <LEFTVALUE ID="touch_1"/>
                             <RIGHTVARONE ID="0"/>
@@ -257,28 +307,28 @@
                         </VAL>
                         <CHILD ID="NEXT">
                             <BLOCK ID="15"/>
-                            <POS X="6392" Y="5632"/>
+                            <POS Y="5632" X="6392"/>
                             <VAL>
                                 <LIGHTCOLOR ID="0"/>
                                 <LIGHTMODE ID="0"/>
                             </VAL>
                             <CHILD ID="NEXT">
                                 <BLOCK ID="5"/>
-                                <POS X="6392" Y="5719"/>
+                                <POS Y="5719" X="6392"/>
                                 <VAL>
                                     <LOOPTIMES ID="0"/>
                                     <FOREVERLOOP ID="true"/>
                                 </VAL>
                                 <CHILD ID="NEXT">
                                     <BLOCK ID="15"/>
-                                    <POS X="6392" Y="6883"/>
+                                    <POS Y="6883" X="6392"/>
                                     <VAL>
                                         <LIGHTCOLOR ID="1"/>
                                         <LIGHTMODE ID="0"/>
                                     </VAL>
                                     <CHILD ID="NEXT">
                                         <BLOCK ID="12"/>
-                                        <POS X="6392" Y="6970"/>
+                                        <POS Y="6970" X="6392"/>
                                         <VAL>
                                             <DELAY ID="2"/>
                                         </VAL>
@@ -286,20 +336,20 @@
                                 </CHILD>
                                 <CHILD ID="STEPNEXT">
                                     <BLOCK ID="32"/>
-                                    <POS X="6392" Y="5816"/>
+                                    <POS Y="5816" X="6392"/>
                                     <VAL>
                                         <PORT ID="5"/>
                                         <VARIRSENSOR ID="air_1"/>
                                     </VAL>
                                     <CHILD ID="NEXT">
                                         <BLOCK ID="1"/>
-                                        <POS X="6392" Y="5903"/>
+                                        <POS Y="5903" X="6392"/>
                                         <VAL>
                                             <CONDITION ID="touch_1 == 1"/>
                                         </VAL>
                                         <CHILD ID="LEFT">
                                             <BLOCK ID="36"/>
-                                            <POS X="5605" Y="5968"/>
+                                            <POS Y="5968" X="5605"/>
                                             <VAL>
                                                 <LEFTVALUE ID="cus_1"/>
                                                 <RIGHTVARONE ID="cus_1"/>
@@ -308,24 +358,24 @@
                                             </VAL>
                                             <CHILD ID="NEXT">
                                                 <BLOCK ID="1"/>
-                                                <POS X="5605" Y="6054"/>
+                                                <POS Y="6054" X="5605"/>
                                                 <VAL>
                                                     <CONDITION ID="cus_1 > 100"/>
                                                 </VAL>
                                                 <CHILD ID="LEFT">
                                                     <BLOCK ID="7"/>
-                                                    <POS X="5492" Y="6119"/>
+                                                    <POS Y="6119" X="5492"/>
                                                     <VAL/>
                                                 </CHILD>
                                                 <CHILD ID="RIGHT">
                                                     <BLOCK ID="1"/>
-                                                    <POS X="5830" Y="6119"/>
+                                                    <POS Y="6119" X="5830"/>
                                                     <VAL>
                                                         <CONDITION ID="cus_2 > cus_3"/>
                                                     </VAL>
                                                     <CHILD ID="LEFT">
                                                         <BLOCK ID="36"/>
-                                                        <POS X="5717" Y="6184"/>
+                                                        <POS Y="6184" X="5717"/>
                                                         <VAL>
                                                             <LEFTVALUE ID="Sens"/>
                                                             <RIGHTVARONE ID="cus_2"/>
@@ -335,7 +385,7 @@
                                                     </CHILD>
                                                     <CHILD ID="RIGHT">
                                                         <BLOCK ID="36"/>
-                                                        <POS X="5942" Y="6184"/>
+                                                        <POS Y="6184" X="5942"/>
                                                         <VAL>
                                                             <LEFTVALUE ID="Sens"/>
                                                             <RIGHTVARONE ID="cus_3"/>
@@ -345,13 +395,13 @@
                                                     </CHILD>
                                                     <CHILD ID="NEXT">
                                                         <BLOCK ID="1"/>
-                                                        <POS X="5830" Y="6303"/>
+                                                        <POS Y="6303" X="5830"/>
                                                         <VAL>
                                                             <CONDITION ID="Sens > 2500"/>
                                                         </VAL>
                                                         <CHILD ID="LEFT">
                                                             <BLOCK ID="36"/>
-                                                            <POS X="5717" Y="6368"/>
+                                                            <POS Y="6368" X="5717"/>
                                                             <VAL>
                                                                 <LEFTVALUE ID="Sens"/>
                                                                 <RIGHTVARONE ID="2500"/>
@@ -361,13 +411,13 @@
                                                         </CHILD>
                                                         <CHILD ID="RIGHT">
                                                             <BLOCK ID="1"/>
-                                                            <POS X="6055" Y="6368"/>
+                                                            <POS Y="6368" X="6055"/>
                                                             <VAL>
                                                                 <CONDITION ID="Sens > 3000"/>
                                                             </VAL>
                                                             <CHILD ID="LEFT">
                                                                 <BLOCK ID="36"/>
-                                                                <POS X="5942" Y="6433"/>
+                                                                <POS Y="6433" X="5942"/>
                                                                 <VAL>
                                                                     <LEFTVALUE ID="Sens"/>
                                                                     <RIGHTVARONE ID="3000"/>
@@ -377,13 +427,13 @@
                                                             </CHILD>
                                                             <CHILD ID="RIGHT">
                                                                 <BLOCK ID="1"/>
-                                                                <POS X="6280" Y="6433"/>
+                                                                <POS Y="6433" X="6280"/>
                                                                 <VAL>
                                                                     <CONDITION ID="Sens > 3500"/>
                                                                 </VAL>
                                                                 <CHILD ID="LEFT">
                                                                     <BLOCK ID="36"/>
-                                                                    <POS X="6167" Y="6498"/>
+                                                                    <POS Y="6498" X="6167"/>
                                                                     <VAL>
                                                                         <LEFTVALUE ID="Sens"/>
                                                                         <RIGHTVARONE ID="3500"/>
@@ -399,7 +449,7 @@
                                         </CHILD>
                                         <CHILD ID="NEXT">
                                             <BLOCK ID="17"/>
-                                            <POS X="6392" Y="6744"/>
+                                            <POS Y="6744" X="6392"/>
                                             <VAL>
                                                 <DISPLAYTYPE ID="0"/>
                                                 <DISPLAYINDEX ID="3"/>
@@ -417,27 +467,27 @@
                 </CHILD>
                 <CHILD ID="STEPNEXT">
                     <BLOCK ID="32"/>
-                    <POS X="6392" Y="4500"/>
+                    <POS Y="4500" X="6392"/>
                     <VAL>
                         <PORT ID="5"/>
                         <VARIRSENSOR ID="air_1"/>
                     </VAL>
                     <CHILD ID="NEXT">
                         <BLOCK ID="1"/>
-                        <POS X="6392" Y="4586"/>
+                        <POS Y="4586" X="6392"/>
                         <VAL>
                             <CONDITION ID="touch_1 == 1"/>
                         </VAL>
                         <CHILD ID="LEFT">
                             <BLOCK ID="11"/>
-                            <POS X="5717" Y="4651"/>
+                            <POS Y="4651" X="5717"/>
                             <VAL>
                                 <NAME ID="Sensores"/>
                                 <INDEX ID="6"/>
                             </VAL>
                             <CHILD ID="NEXT">
                                 <BLOCK ID="36"/>
-                                <POS X="5717" Y="4738"/>
+                                <POS Y="4738" X="5717"/>
                                 <VAL>
                                     <LEFTVALUE ID="cus_1"/>
                                     <RIGHTVARONE ID="cus_1"/>
@@ -446,19 +496,19 @@
                                 </VAL>
                                 <CHILD ID="NEXT">
                                     <BLOCK ID="1"/>
-                                    <POS X="5717" Y="4824"/>
+                                    <POS Y="4824" X="5717"/>
                                     <VAL>
                                         <CONDITION ID="(cus_4 == 0)&amp;&amp;(cus_1 > 50)"/>
                                     </VAL>
                                     <CHILD ID="LEFT">
                                         <BLOCK ID="1"/>
-                                        <POS X="5605" Y="4889"/>
+                                        <POS Y="4889" X="5605"/>
                                         <VAL>
                                             <CONDITION ID="cus_2 &lt; cus_1"/>
                                         </VAL>
                                         <CHILD ID="LEFT">
                                             <BLOCK ID="36"/>
-                                            <POS X="5492" Y="4954"/>
+                                            <POS Y="4954" X="5492"/>
                                             <VAL>
                                                 <LEFTVALUE ID="cus_2"/>
                                                 <RIGHTVARONE ID="gra_3"/>
@@ -467,7 +517,7 @@
                                             </VAL>
                                             <CHILD ID="NEXT">
                                                 <BLOCK ID="36"/>
-                                                <POS X="5492" Y="5041"/>
+                                                <POS Y="5041" X="5492"/>
                                                 <VAL>
                                                     <LEFTVALUE ID="cus_4"/>
                                                     <RIGHTVARONE ID="1"/>
@@ -476,7 +526,7 @@
                                                 </VAL>
                                                 <CHILD ID="NEXT">
                                                     <BLOCK ID="15"/>
-                                                    <POS X="5492" Y="5128"/>
+                                                    <POS Y="5128" X="5492"/>
                                                     <VAL>
                                                         <LIGHTCOLOR ID="0"/>
                                                         <LIGHTMODE ID="1"/>
@@ -487,19 +537,19 @@
                                     </CHILD>
                                     <CHILD ID="RIGHT">
                                         <BLOCK ID="1"/>
-                                        <POS X="6055" Y="4889"/>
+                                        <POS Y="4889" X="6055"/>
                                         <VAL>
                                             <CONDITION ID="(cus_4 == 1)&amp;&amp;(cus_1 > 100)"/>
                                         </VAL>
                                         <CHILD ID="LEFT">
                                             <BLOCK ID="1"/>
-                                            <POS X="5942" Y="4954"/>
+                                            <POS Y="4954" X="5942"/>
                                             <VAL>
                                                 <CONDITION ID="cus_3 &lt; cus_1"/>
                                             </VAL>
                                             <CHILD ID="LEFT">
                                                 <BLOCK ID="36"/>
-                                                <POS X="5830" Y="5019"/>
+                                                <POS Y="5019" X="5830"/>
                                                 <VAL>
                                                     <LEFTVALUE ID="cus_3"/>
                                                     <RIGHTVARONE ID="gra_4"/>
@@ -508,7 +558,7 @@
                                                 </VAL>
                                                 <CHILD ID="NEXT">
                                                     <BLOCK ID="36"/>
-                                                    <POS X="5830" Y="5106"/>
+                                                    <POS Y="5106" X="5830"/>
                                                     <VAL>
                                                         <LEFTVALUE ID="cus_4"/>
                                                         <RIGHTVARONE ID="2"/>
@@ -517,7 +567,7 @@
                                                     </VAL>
                                                     <CHILD ID="NEXT">
                                                         <BLOCK ID="15"/>
-                                                        <POS X="5830" Y="5193"/>
+                                                        <POS Y="5193" X="5830"/>
                                                         <VAL>
                                                             <LIGHTCOLOR ID="0"/>
                                                             <LIGHTMODE ID="2"/>
@@ -528,13 +578,13 @@
                                         </CHILD>
                                         <CHILD ID="RIGHT">
                                             <BLOCK ID="1"/>
-                                            <POS X="6280" Y="4954"/>
+                                            <POS Y="4954" X="6280"/>
                                             <VAL>
                                                 <CONDITION ID="cus_1 > 150"/>
                                             </VAL>
                                             <CHILD ID="LEFT">
                                                 <BLOCK ID="7"/>
-                                                <POS X="6167" Y="5019"/>
+                                                <POS Y="5019" X="6167"/>
                                                 <VAL/>
                                             </CHILD>
                                         </CHILD>
@@ -547,16 +597,16 @@
             </CHILD>
             <CHILD ID="NEXT">
                 <BLOCK ID="13"/>
-                <POS X="6545" Y="7088"/>
+                <POS Y="7088" X="6545"/>
                 <VAL>
                     <TIMESETTYPE ID="0"/>
                     <TIMEVAR ID=""/>
                 </VAL>
             </CHILD>
         </SUBPROGRAM>
-        <SUBPROGRAM X="6545" Y="4252" NAME="Mantener_D" ID="11" TYPE="1">
+        <SUBPROGRAM ID="11" TYPE="1" NAME="Giro" Y="4252" X="6545">
             <BLOCK ID="30"/>
-            <POS X="6545" Y="4338"/>
+            <POS Y="4338" X="6545"/>
             <VAL>
                 <GETVAL ID="Ac_2"/>
                 <GETAXIS ID="2"/>
@@ -564,7 +614,7 @@
             </VAL>
             <CHILD ID="NEXT">
                 <BLOCK ID="36"/>
-                <POS X="6545" Y="4424"/>
+                <POS Y="4424" X="6545"/>
                 <VAL>
                     <LEFTVALUE ID="G"/>
                     <RIGHTVARONE ID="40"/>
@@ -573,7 +623,7 @@
                 </VAL>
                 <CHILD ID="NEXT">
                     <BLOCK ID="36"/>
-                    <POS X="6545" Y="4511"/>
+                    <POS Y="4511" X="6545"/>
                     <VAL>
                         <LEFTVALUE ID="G1"/>
                         <RIGHTVARONE ID="gyro_2"/>
@@ -582,7 +632,7 @@
                     </VAL>
                     <CHILD ID="NEXT">
                         <BLOCK ID="36"/>
-                        <POS X="6545" Y="4597"/>
+                        <POS Y="4597" X="6545"/>
                         <VAL>
                             <LEFTVALUE ID="G2"/>
                             <RIGHTVARONE ID="gyro_2"/>
@@ -591,7 +641,7 @@
                         </VAL>
                         <CHILD ID="NEXT">
                             <BLOCK ID="36"/>
-                            <POS X="6545" Y="4684"/>
+                            <POS Y="4684" X="6545"/>
                             <VAL>
                                 <LEFTVALUE ID="Pm"/>
                                 <RIGHTVARONE ID="gyro_2"/>
@@ -600,13 +650,13 @@
                             </VAL>
                             <CHILD ID="NEXT">
                                 <BLOCK ID="1"/>
-                                <POS X="6545" Y="4771"/>
+                                <POS Y="4771" X="6545"/>
                                 <VAL>
                                     <CONDITION ID="G1 > 360"/>
                                 </VAL>
                                 <CHILD ID="LEFT">
                                     <BLOCK ID="36"/>
-                                    <POS X="6432" Y="4836"/>
+                                    <POS Y="4836" X="6432"/>
                                     <VAL>
                                         <LEFTVALUE ID="G1"/>
                                         <RIGHTVARONE ID="G1"/>
@@ -616,13 +666,13 @@
                                 </CHILD>
                                 <CHILD ID="NEXT">
                                     <BLOCK ID="1"/>
-                                    <POS X="6545" Y="4954"/>
+                                    <POS Y="4954" X="6545"/>
                                     <VAL>
                                         <CONDITION ID="G2 &lt; 0"/>
                                     </VAL>
                                     <CHILD ID="LEFT">
                                         <BLOCK ID="36"/>
-                                        <POS X="6432" Y="5019"/>
+                                        <POS Y="5019" X="6432"/>
                                         <VAL>
                                             <LEFTVALUE ID="G2"/>
                                             <RIGHTVARONE ID="0"/>
@@ -631,7 +681,7 @@
                                         </VAL>
                                         <CHILD ID="NEXT">
                                             <BLOCK ID="36"/>
-                                            <POS X="6432" Y="5106"/>
+                                            <POS Y="5106" X="6432"/>
                                             <VAL>
                                                 <LEFTVALUE ID="G2"/>
                                                 <RIGHTVARONE ID="360"/>
@@ -642,7 +692,7 @@
                                     </CHILD>
                                     <CHILD ID="NEXT">
                                         <BLOCK ID="36"/>
-                                        <POS X="6545" Y="5224"/>
+                                        <POS Y="5224" X="6545"/>
                                         <VAL>
                                             <LEFTVALUE ID="G"/>
                                             <RIGHTVARONE ID="gyro_2"/>
@@ -651,39 +701,39 @@
                                         </VAL>
                                         <CHILD ID="NEXT">
                                             <BLOCK ID="5"/>
-                                            <POS X="6545" Y="5311"/>
+                                            <POS Y="5311" X="6545"/>
                                             <VAL>
                                                 <LOOPTIMES ID="0"/>
                                                 <FOREVERLOOP ID="true"/>
                                             </VAL>
                                             <CHILD ID="STEPNEXT">
                                                 <BLOCK ID="11"/>
-                                                <POS X="6545" Y="5408"/>
+                                                <POS Y="5408" X="6545"/>
                                                 <VAL>
                                                     <NAME ID="Giros1"/>
                                                     <INDEX ID="7"/>
                                                 </VAL>
                                                 <CHILD ID="NEXT">
                                                     <BLOCK ID="3"/>
-                                                    <POS X="6545" Y="5495"/>
+                                                    <POS Y="5495" X="6545"/>
                                                     <VAL>
                                                         <CONDITION ID="(gyro_1 > G2)&amp;&amp;(gyro_1 &lt; G1)"/>
                                                     </VAL>
                                                     <CHILD ID="NEXT">
                                                         <BLOCK ID="3"/>
-                                                        <POS X="6545" Y="5903"/>
+                                                        <POS Y="5903" X="6545"/>
                                                         <VAL>
                                                             <CONDITION ID="(gyro_1 &lt; Pm)&amp;&amp;(gyro_1 > G1)"/>
                                                         </VAL>
                                                         <CHILD ID="NEXT">
                                                             <BLOCK ID="3"/>
-                                                            <POS X="6545" Y="6312"/>
+                                                            <POS Y="6312" X="6545"/>
                                                             <VAL>
                                                                 <CONDITION ID="(gyro_1 &lt; Pm)&amp;&amp;(gyro_1 &lt; G2)"/>
                                                             </VAL>
                                                             <CHILD ID="NEXT">
                                                                 <BLOCK ID="17"/>
-                                                                <POS X="6545" Y="6721"/>
+                                                                <POS Y="6721" X="6545"/>
                                                                 <VAL>
                                                                     <DISPLAYTYPE ID="0"/>
                                                                     <DISPLAYINDEX ID="0"/>
@@ -695,7 +745,7 @@
                                                             </CHILD>
                                                             <CHILD ID="STEPNEXT">
                                                                 <BLOCK ID="17"/>
-                                                                <POS X="6545" Y="6409"/>
+                                                                <POS Y="6409" X="6545"/>
                                                                 <VAL>
                                                                     <DISPLAYTYPE ID="0"/>
                                                                     <DISPLAYINDEX ID="2"/>
@@ -706,17 +756,17 @@
                                                                 </VAL>
                                                                 <CHILD ID="NEXT">
                                                                     <BLOCK ID="11"/>
-                                                                    <POS X="6545" Y="6496"/>
+                                                                    <POS Y="6496" X="6545"/>
                                                                     <VAL>
                                                                         <NAME ID="Giros1"/>
                                                                         <INDEX ID="7"/>
                                                                     </VAL>
                                                                     <CHILD ID="NEXT">
                                                                         <BLOCK ID="11"/>
-                                                                        <POS X="6545" Y="6582"/>
+                                                                        <POS Y="6582" X="6545"/>
                                                                         <VAL>
-                                                                            <NAME ID="MRigth"/>
-                                                                            <INDEX ID="2"/>
+                                                                            <NAME ID="MLeft"/>
+                                                                            <INDEX ID="1"/>
                                                                         </VAL>
                                                                     </CHILD>
                                                                 </CHILD>
@@ -724,7 +774,7 @@
                                                         </CHILD>
                                                         <CHILD ID="STEPNEXT">
                                                             <BLOCK ID="17"/>
-                                                            <POS X="6545" Y="6000"/>
+                                                            <POS Y="6000" X="6545"/>
                                                             <VAL>
                                                                 <DISPLAYTYPE ID="0"/>
                                                                 <DISPLAYINDEX ID="2"/>
@@ -735,17 +785,17 @@
                                                             </VAL>
                                                             <CHILD ID="NEXT">
                                                                 <BLOCK ID="11"/>
-                                                                <POS X="6545" Y="6087"/>
+                                                                <POS Y="6087" X="6545"/>
                                                                 <VAL>
                                                                     <NAME ID="Giros1"/>
                                                                     <INDEX ID="7"/>
                                                                 </VAL>
                                                                 <CHILD ID="NEXT">
                                                                     <BLOCK ID="11"/>
-                                                                    <POS X="6545" Y="6174"/>
+                                                                    <POS Y="6174" X="6545"/>
                                                                     <VAL>
-                                                                        <NAME ID="MLeft"/>
-                                                                        <INDEX ID="1"/>
+                                                                        <NAME ID="MRigth"/>
+                                                                        <INDEX ID="2"/>
                                                                     </VAL>
                                                                 </CHILD>
                                                             </CHILD>
@@ -753,7 +803,7 @@
                                                     </CHILD>
                                                     <CHILD ID="STEPNEXT">
                                                         <BLOCK ID="17"/>
-                                                        <POS X="6545" Y="5592"/>
+                                                        <POS Y="5592" X="6545"/>
                                                         <VAL>
                                                             <DISPLAYTYPE ID="0"/>
                                                             <DISPLAYINDEX ID="2"/>
@@ -764,14 +814,14 @@
                                                         </VAL>
                                                         <CHILD ID="NEXT">
                                                             <BLOCK ID="11"/>
-                                                            <POS X="6545" Y="5678"/>
+                                                            <POS Y="5678" X="6545"/>
                                                             <VAL>
                                                                 <NAME ID="Giros1"/>
                                                                 <INDEX ID="7"/>
                                                             </VAL>
                                                             <CHILD ID="NEXT">
                                                                 <BLOCK ID="11"/>
-                                                                <POS X="6545" Y="5765"/>
+                                                                <POS Y="5765" X="6545"/>
                                                                 <VAL>
                                                                     <NAME ID="MStop"/>
                                                                     <INDEX ID="5"/>
@@ -790,107 +840,15 @@
                 </CHILD>
             </CHILD>
         </SUBPROGRAM>
-        <SUBPROGRAM X="6545" Y="4252" NAME="Giro" ID="12" TYPE="1">
-            <BLOCK ID="30"/>
-            <POS X="6545" Y="4338"/>
-            <VAL>
-                <GETVAL ID="Ac_2"/>
-                <GETAXIS ID="2"/>
-                <GETDATATYPE ID="0"/>
-            </VAL>
-            <CHILD ID="NEXT">
-                <BLOCK ID="36"/>
-                <POS X="6545" Y="4424"/>
-                <VAL>
-                    <LEFTVALUE ID="G"/>
-                    <RIGHTVARONE ID="50"/>
-                    <RIGHTOPERATOR ID="4"/>
-                    <RIGHTTWO ID=""/>
-                </VAL>
-                <CHILD ID="NEXT">
-                    <BLOCK ID="36"/>
-                    <POS X="6545" Y="4511"/>
-                    <VAL>
-                        <LEFTVALUE ID="G1"/>
-                        <RIGHTVARONE ID="gyro_2"/>
-                        <RIGHTOPERATOR ID="0"/>
-                        <RIGHTTWO ID="G"/>
-                    </VAL>
-                    <CHILD ID="NEXT">
-                        <BLOCK ID="1"/>
-                        <POS X="6545" Y="4597"/>
-                        <VAL>
-                            <CONDITION ID="G1 > 360"/>
-                        </VAL>
-                        <CHILD ID="LEFT">
-                            <BLOCK ID="36"/>
-                            <POS X="6432" Y="4662"/>
-                            <VAL>
-                                <LEFTVALUE ID="G1"/>
-                                <RIGHTVARONE ID="G1"/>
-                                <RIGHTOPERATOR ID="1"/>
-                                <RIGHTTWO ID="360"/>
-                            </VAL>
-                        </CHILD>
-                        <CHILD ID="NEXT">
-                            <BLOCK ID="36"/>
-                            <POS X="6545" Y="4781"/>
-                            <VAL>
-                                <LEFTVALUE ID="G2"/>
-                                <RIGHTVARONE ID="2"/>
-                                <RIGHTOPERATOR ID="4"/>
-                                <RIGHTTWO ID=""/>
-                            </VAL>
-                            <CHILD ID="NEXT">
-                                <BLOCK ID="5"/>
-                                <POS X="6545" Y="4868"/>
-                                <VAL>
-                                    <LOOPTIMES ID="0"/>
-                                    <FOREVERLOOP ID="true"/>
-                                </VAL>
-                                <CHILD ID="STEPNEXT">
-                                    <BLOCK ID="11"/>
-                                    <POS X="6545" Y="4965"/>
-                                    <VAL>
-                                        <NAME ID="Giros1"/>
-                                        <INDEX ID="7"/>
-                                    </VAL>
-                                    <CHILD ID="NEXT">
-                                        <BLOCK ID="17"/>
-                                        <POS X="6545" Y="5051"/>
-                                        <VAL>
-                                            <DISPLAYTYPE ID="0"/>
-                                            <DISPLAYINDEX ID="2"/>
-                                            <DISPLAYSTRING ID="gyro_1;G1;G2;;;;;"/>
-                                            <DISPLAYCHECKS ID="0;0;0;1;1;1;1;1"/>
-                                            <DISPLAYMEDIAID ID="1"/>
-                                            <DISPLAYCUSTOMIMAGENAME ID=""/>
-                                        </VAL>
-                                        <CHILD ID="NEXT">
-                                            <BLOCK ID="15"/>
-                                            <POS X="6545" Y="5138"/>
-                                            <VAL>
-                                                <LIGHTCOLOR ID="1"/>
-                                                <LIGHTMODE ID="0"/>
-                                            </VAL>
-                                        </CHILD>
-                                    </CHILD>
-                                </CHILD>
-                            </CHILD>
-                        </CHILD>
-                    </CHILD>
-                </CHILD>
-            </CHILD>
-        </SUBPROGRAM>
     </Catalog>
     <Catalog GLOBALMTN="VJC6.0"/>
     <Catalog GLOABLETIP="VJC6.0">
         <Catalog ID="0">
-            <POS NOTE="VP" X="6724" Y="4357"/>
-            <POS NOTE="VN" X="6725" Y="4434"/>
-            <POS NOTE="Sensibilidad" X="6724" Y="4521"/>
-            <POS NOTE="AutoSensibilidad" X="6729" Y="4606"/>
-            <POS NOTE="Tiempo" X="6722" Y="4701"/>
+            <POS NOTE="VP" Y="4357" X="6724"/>
+            <POS NOTE="VN" Y="4434" X="6725"/>
+            <POS NOTE="Sensibilidad" Y="4521" X="6724"/>
+            <POS NOTE="AutoSensibilidad" Y="4607" X="6724"/>
+            <POS NOTE="Tiempo" Y="4695" X="6730"/>
         </Catalog>
         <Catalog ID="1"/>
         <Catalog ID="2"/>
@@ -903,16 +861,11 @@
         <Catalog ID="9"/>
         <Catalog ID="10"/>
         <Catalog ID="11">
-            <POS NOTE="" X="0" Y="0"/>
-            <POS NOTE="" X="-2147483648" Y="0"/>
-            <POS NOTE="" X="-2147483648" Y="0"/>
-            <POS NOTE="" X="-2147483648" Y="0"/>
-            <POS NOTE="" X="-2147483648" Y="0"/>
-        </Catalog>
-        <Catalog ID="12">
-            <POS NOTE="Posicion Inicial" X="6725" Y="4354"/>
-            <POS NOTE="Distancia de giro" X="6728" Y="4436"/>
-            <POS NOTE="" X="0" Y="0"/>
+            <POS NOTE="" Y="0" X="-2147483648"/>
+            <POS NOTE="" Y="0" X="-2147483648"/>
+            <POS NOTE="" Y="0" X="-2147483648"/>
+            <POS NOTE="" Y="0" X="0"/>
+            <POS NOTE="" Y="0" X="-2147483648"/>
         </Catalog>
     </Catalog>
     <Catalog BLOCK="VJC6.0">
@@ -921,5 +874,5 @@
         <Catalog Var="VJC6.0"/>
         <Catalog BaseBlock="VJC6.0"/>
     </Catalog>
-    <Catalog SIZE="132"/>
+    <Catalog SIZE="197"/>
 </VJCC>
